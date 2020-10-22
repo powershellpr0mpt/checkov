@@ -4,7 +4,7 @@ from checkov.terraform.checks.resource.base_resource_check import BaseResourceCh
 
 class GoogleCloudPostgreSqlLogTemp(BaseResourceCheck):
     def __init__(self):
-        name = "Ensure PostgreSQL database 'log_temp_files flag is set to '0'"
+        name = "Ensure PostgreSQL database 'log_temp_files' flag is set to '0'"
         check_id = "CKV_GCP_56"
         supported_resources = ['google_sql_database_instance']
         categories = [CheckCategories.LOGGING]
